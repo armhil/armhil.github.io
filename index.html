@@ -26,11 +26,6 @@
       flex-direction: column;
     }
 
-    /* When hovering over the image-wrapper, slide the button overlay up */
-    .image-wrapper:hover .button-overlay {
-      transform: translateY(0);
-    }
-
     .image-wrapper {
       display: flex;
       flex-wrap:nowrap;
@@ -49,16 +44,12 @@
     }
 
     .button-overlay {
-      position: absolute;
       bottom: 0;
       width: 100%;
       background: rgba(0, 0, 0, 0.7);
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-around;
-      padding: 10px;
-      transform: translateY(100%);
-      transition: transform 0.3s ease;
     }
 
     .button-overlay a {
@@ -70,7 +61,6 @@
       text-decoration: none;
       font-size: 12px;
       white-space: nowrap;
-      transition: background-color 0.2s ease;
     }
 
     .button-overlay a.google {
@@ -85,9 +75,6 @@
       background-color: #6a0dad;
     }
 
-    .button-overlay a:hover {
-      opacity: 0.85;
-    }
 
     .app-description {
       padding: 16px;
@@ -128,12 +115,6 @@
   <div class="app-card">
     <div class="image-wrapper">
       <img src="https://raw.githubusercontent.com/armhil/easy-qrcode-barcode-addin/refs/heads/main/submission/images/logo-300x300.png" alt="App logo" />
-      <div class="button-overlay">
-        <a href="https://appsource.microsoft.com/en-us/product/office/WA200002492?tab=Overview" target="_blank">Get it on Office</a>
-        <a href="https://docs.google.com/app1" target="_blank" class="google">Get it on Google Docs</a>
-        <a href="./easy-qrcode-barcode/documents/privacy_policy.html" target="_blank" class="privacy">Privacy Policy</a>
-        <a href="./easy-qrcode-barcode/documents/support_policy.html" target="_blank" class="support">Support Policy</a>
-      </div>
     </div>
     <div class="app-description">
       <div class="app-title">Easy QR Code Barcode Generator</div>
@@ -142,6 +123,12 @@
       <p>Thousands of users rely on this add-in to streamline their workflow, improve document organization, and enhance accessibility with scannable data. No need for external tools—simply enter your text, generate a high-quality QR code or barcode, and insert it directly into your document.</p>
 
       <p>Start generating QR codes and barcodes effortlessly and boost your productivity today!</p>
+    </div>
+    <div class="button-overlay">
+        <a href="https://appsource.microsoft.com/en-us/product/office/WA200002492?tab=Overview" target="_blank">Get it on Office</a>
+        <a href="https://docs.google.com/app1" target="_blank" class="google">Get it on Google Docs</a>
+        <a href="./easy-qrcode-barcode/documents/privacy_policy.html" target="_blank" class="privacy">Privacy Policy</a>
+        <a href="./easy-qrcode-barcode/documents/support_policy.html" target="_blank" class="support">Support Policy</a>
     </div>
   </div>
 
