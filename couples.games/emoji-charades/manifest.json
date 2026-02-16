@@ -1,7 +1,8 @@
 {
-  "script": "assets/index-y5Iajf-5.js",
+  "script": "assets/index-_HNRtFkj.js",
   "css": "assets/index-EvGEoCAF.css",
   "title": "Emoji Charades",
   "description": "Guess movie titles from emoji clues in real time.",
-  "imageAlt": "Emoji Charades game cover"
+  "imageAlt": "Emoji Charades game cover",
+  "imagePath": "assets/logo.jpg"
 }
