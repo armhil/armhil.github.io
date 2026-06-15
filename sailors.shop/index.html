@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sailor's Logbook Configurator</title>
+    <script type="module" crossorigin src="./assets/index-BPdLHWSW.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D0ONeZ1Z.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="config-panel" aria-label="Logbook configuration">
+        <div class="brand-row">
+          <div class="brand-mark" aria-hidden="true">
+            <span></span>
+          </div>
+          <div>
+            <p class="eyebrow">Sailor's Shop</p>
+            <h1>Logbook Builder</h1>
+          </div>
+        </div>
+
+        <section class="control-group" aria-labelledby="size-title">
+          <div class="group-heading">
+            <h2 id="size-title">Page Format</h2>
+            <span id="size-readout">A4 portrait</span>
+          </div>
+          <div class="option-grid" id="size-options"></div>
+        </section>
+
+        <section class="control-group" aria-labelledby="paper-title">
+          <div class="group-heading">
+            <h2 id="paper-title">Paper Stock</h2>
+            <span id="paper-readout">Standard paper</span>
+          </div>
+          <div class="paper-options" id="paper-options"></div>
+        </section>
+
+        <section class="control-group" aria-labelledby="binding-title">
+          <div class="group-heading">
+            <h2 id="binding-title">Cover & Binding</h2>
+            <span id="binding-readout">Leather binding</span>
+          </div>
+          <div class="binding-options" id="binding-options"></div>
+        </section>
+
+        <section class="control-group" aria-labelledby="header-title">
+          <div class="group-heading">
+            <h2 id="header-title">Page Header</h2>
+            <span id="header-readout">Voyage log</span>
+          </div>
+          <div class="header-options" id="header-options"></div>
+        </section>
+
+        <section class="control-group" aria-labelledby="columns-title">
+          <div class="group-heading">
+            <h2 id="columns-title">Log Columns</h2>
+            <span id="column-count">0 selected</span>
+          </div>
+          <div class="column-grid" id="column-options"></div>
+          <div class="column-order-panel" aria-labelledby="column-order-title">
+            <div class="column-order-heading">
+              <h3 id="column-order-title">Column order</h3>
+            </div>
+            <div class="column-order-list" id="column-order-list"></div>
+          </div>
+          <div class="remarks-layout-panel" aria-labelledby="remarks-layout-title">
+            <div class="column-order-heading">
+              <h3 id="remarks-layout-title">Remarks layout</h3>
+            </div>
+            <div class="remarks-options" id="remarks-options"></div>
+            <div class="remarks-height-group">
+              <span>Remarks height</span>
+              <div class="remarks-height-options" id="remarks-height-options"></div>
+            </div>
+          </div>
+          <form class="custom-column" id="custom-column-form">
+            <label for="custom-column-input">Custom column</label>
+            <div class="input-row">
+              <input id="custom-column-input" type="text" maxlength="20" placeholder="e.g. Reefing notes" />
+              <button type="submit">Add</button>
+            </div>
+          </form>
+        </section>
+      </section>
+
+      <section class="preview-panel" aria-label="Notebook preview">
+        <div class="preview-toolbar">
+          <div>
+            <p class="eyebrow">Live preview</p>
+            <h2 id="preview-title">A4 waterproof logbook</h2>
+          </div>
+          <div class="preview-meta" id="preview-meta"></div>
+        </div>
+
+        <div class="preview-stage">
+          <div class="notebook-shadow" aria-hidden="true"></div>
+          <div class="notebook-frame">
+            <article class="notebook" id="notebook-preview">
+              <div class="outer-cover" aria-hidden="true"></div>
+              <div class="binding-spine" aria-hidden="true"></div>
+              <div class="notebook-page left-page">
+                <header class="page-header" id="left-page-header"></header>
+                <div class="log-table" id="left-log-table"></div>
+              </div>
+              <div class="notebook-page right-page">
+                <header class="page-header" id="right-page-header"></header>
+                <div class="log-table" id="right-log-table"></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
