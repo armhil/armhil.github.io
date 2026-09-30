@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sailor’s Logbook — Make it yours</title>
     <meta name="description" content="Build your sailing logbook. Choose your format, cover text and binding, then arrange the columns you use at sea." />
-    <script type="module" crossorigin src="./assets/index-BCg8J7bY.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-s8ujnJNp.css">
+    <script type="module" crossorigin src="./assets/index-CL-cfI8C.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BXmmIKr_.css">
   </head>
   <body>
     <a class="skip-link" href="#builder">Skip to logbook builder</a>
@@ -60,6 +60,14 @@
           <input id="cover-subtitle" type="text" maxlength="80" placeholder="e.g. Saoirse · Our adventures at sea" autocomplete="off" />
         </section>
 
+        <section class="control-group cover-fields" aria-labelledby="first-page-title">
+          <div class="group-heading"><h2 id="first-page-title">Your first page</h2></div>
+          <label for="first-page-title-input">Heading <span>80 characters max</span></label>
+          <input id="first-page-title-input" type="text" maxlength="80" placeholder="e.g. Vessel details" autocomplete="off" />
+          <label for="first-page-notes">Notes <span>1,000 characters max</span></label>
+          <textarea id="first-page-notes" rows="6" maxlength="1000" placeholder="Add a dedication, vessel details, emergency contacts or anything else you want before the log table."></textarea>
+        </section>
+
         <section class="control-group" aria-labelledby="binding-title">
           <div class="group-heading">
             <h2 id="binding-title">Cover & Binding</h2>
@@ -100,6 +108,12 @@
               <span>Remarks height</span>
               <div class="remarks-height-options" id="remarks-height-options"></div>
             </div>
+          </div>
+          <div class="remarks-layout-panel" aria-labelledby="footer-sections-title">
+            <div class="column-order-heading">
+              <h3 id="footer-sections-title">Footer sections</h3>
+            </div>
+            <div class="remarks-options" id="footer-options"></div>
           </div>
           <form class="custom-column" id="custom-column-form">
             <label for="custom-column-input">Custom column</label>
