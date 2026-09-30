@@ -3,23 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sailor's Logbook Configurator</title>
-    <script type="module" crossorigin src="./assets/index-BHOkDbZA.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CBMr7ZCJ.css">
+    <title>Sailor’s Logbook — Make it yours</title>
+    <meta name="description" content="Build your sailing logbook. Choose your format, cover text and binding, then arrange the columns you use at sea." />
+    <script type="module" crossorigin src="./assets/index-BCg8J7bY.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-s8ujnJNp.css">
   </head>
   <body>
-    <main class="app-shell">
-      <section class="config-panel" aria-label="Logbook configuration">
-        <div class="brand-row">
-          <div class="brand-mark" aria-hidden="true">
-            <span></span>
-          </div>
-          <div>
-            <p class="eyebrow">Sailor's Shop</p>
-            <h1>Logbook Builder</h1>
-          </div>
+    <a class="skip-link" href="#builder">Skip to logbook builder</a>
+    <header class="site-header">
+      <a class="wordmark" href="#">Sailor’s Logbook<span class="wordmark-dot">.</span></a>
+      <a class="header-link" href="#builder">Make it yours <span aria-hidden="true">↗</span></a>
+    </header>
+    <section class="landing" aria-labelledby="intro-title">
+      <div class="landing-copy">
+        <p class="eyebrow">The next chapter is yours</p>
+        <h1 id="intro-title">Every voyage.<br>Every detail.<br><em>Entirely yours.</em></h1>
+        <p class="landing-description">A logbook should follow the way you sail. Put your name on the cover. Make room for the details that matter. Keep a record of every passage.</p>
+        <a class="landing-cta" href="#builder">Create your logbook <span aria-hidden="true">↗</span></a>
+        <p class="landing-caption">A4 portrait or landscape · Standard paper · Soft or hard cover</p>
+      </div>
+      <div class="landing-stage" aria-label="Portrait and landscape logbook cover previews">
+        <span class="stage-label">A place for every passage</span>
+        <div class="hero-book hero-landscape" aria-label="Landscape cover example">
+          <div class="hero-book-face"><span class="hero-edition">SAILOR’S LOGBOOK</span><span class="hero-cover-title">VOYAGE LOG</span><span class="hero-rule"></span><span class="hero-cover-subtitle">A record of every passage.</span></div>
         </div>
-
+        <div class="hero-book hero-portrait" aria-label="Portrait cover example">
+          <div class="hero-book-face"><span class="hero-edition">SAILOR’S LOGBOOK</span><span class="hero-cover-title">VOYAGE LOG</span><span class="hero-rule"></span><span class="hero-cover-subtitle">A record of every passage.</span></div>
+        </div>
+        <span class="stage-footnote">Your cover. Your pages. Your story.</span>
+      </div>
+    </section>
+    <div class="builder-heading"><p class="eyebrow">From the cover to the last column</p><h2>Make it your own.</h2><p>Explore the book as you build it.</p></div>
+    <main class="app-shell" id="builder">
+      <section class="config-panel" aria-label="Logbook configuration">
+        <div class="config-heading"><p class="eyebrow">The logbook atelier</p><h2>Make it yours.</h2></div>
+        <div class="config-tabs" role="tablist" aria-label="Configuration steps">
+          <button id="tab-book" type="button" role="tab" aria-selected="true" aria-controls="book-settings">01 <span>The book</span></button>
+          <button id="tab-pages" type="button" role="tab" aria-selected="false" aria-controls="page-settings" tabindex="-1">02 <span>Your pages</span></button>
+        </div>
+        <p id="configuration-notice" role="status" aria-live="polite"></p>
+        <div id="book-settings" role="tabpanel" aria-labelledby="tab-book">
         <section class="control-group" aria-labelledby="size-title">
           <div class="group-heading">
             <h2 id="size-title">Page Format</h2>
@@ -28,22 +51,26 @@
           <div class="option-grid" id="size-options"></div>
         </section>
 
-        <section class="control-group" aria-labelledby="paper-title">
-          <div class="group-heading">
-            <h2 id="paper-title">Paper Stock</h2>
-            <span id="paper-readout">Standard paper</span>
-          </div>
-          <div class="paper-options" id="paper-options"></div>
+        <p class="paper-included">Standard A4 paper included.</p>
+        <section class="control-group cover-fields" aria-labelledby="cover-text-title">
+          <div class="group-heading"><h2 id="cover-text-title">Your cover text</h2></div>
+          <label for="cover-title">Title <span>48 characters max</span></label>
+          <input id="cover-title" type="text" maxlength="48" placeholder="e.g. VOYAGE LOG" autocomplete="off" />
+          <label for="cover-subtitle">Subtitle or vessel name <span>80 characters max</span></label>
+          <input id="cover-subtitle" type="text" maxlength="80" placeholder="e.g. Saoirse · Our adventures at sea" autocomplete="off" />
         </section>
 
         <section class="control-group" aria-labelledby="binding-title">
           <div class="group-heading">
             <h2 id="binding-title">Cover & Binding</h2>
-            <span id="binding-readout">Leather binding</span>
+            <span id="binding-readout">Hard-cover</span>
           </div>
           <div class="binding-options" id="binding-options"></div>
         </section>
 
+        </div>
+        <div id="page-settings" role="tabpanel" aria-labelledby="tab-pages" hidden>
+        <p class="settings-note">Select the fields you use at sea. Your choices appear on every page.</p>
         <section class="control-group" aria-labelledby="header-title">
           <div class="group-heading">
             <h2 id="header-title">Page Header</h2>
@@ -82,36 +109,86 @@
             </div>
           </form>
         </section>
+        </div>
+        <div class="order-entry">
+          <button class="primary-button" id="review-order" type="button">Review your logbook <span aria-hidden="true">→</span></button>
+          <p>Send an order request. No payment taken.</p>
+        </div>
       </section>
 
       <section class="preview-panel" aria-label="Notebook preview">
         <div class="preview-toolbar">
           <div>
-            <p class="eyebrow">Live preview</p>
-            <h2 id="preview-title">A4 waterproof logbook</h2>
+            <p class="eyebrow">Designed by you</p>
+            <h2 id="preview-title">A4 logbook</h2>
           </div>
           <div class="preview-meta" id="preview-meta"></div>
         </div>
 
-        <div class="preview-stage">
-          <div class="notebook-shadow" aria-hidden="true"></div>
-          <div class="notebook-frame">
-            <article class="notebook" id="notebook-preview">
-              <div class="outer-cover" aria-hidden="true"></div>
-              <div class="binding-spine" aria-hidden="true"></div>
-              <div class="notebook-page left-page">
-                <header class="page-header" id="left-page-header"></header>
-                <div class="log-table" id="left-log-table"></div>
-              </div>
-              <div class="notebook-page right-page">
-                <header class="page-header" id="right-page-header"></header>
-                <div class="log-table" id="right-log-table"></div>
-              </div>
-            </article>
-          </div>
+        <div class="book-tools" aria-label="Preview controls">
+          <div class="book-view-switch"><button id="cover-view" type="button" aria-pressed="true">Cover</button><button id="book-view" type="button" aria-pressed="false">Inside</button><button id="flat-view" type="button" aria-pressed="false">Flat proof</button></div>
+          <button id="book-zoom" type="button" aria-pressed="false">Zoom in</button>
         </div>
+        <div class="book-viewport" id="book-preview">
+          <div class="book-scene" id="book-scene">
+            <div class="live-book" id="live-book" tabindex="0" aria-label="Logbook preview. Use left and right arrow keys to turn pages.">
+            </div>
+          </div>
+          <div id="flat-proof" class="flat-proof" hidden aria-label="Flat print layout"></div>
+        </div>
+        <div class="book-navigation">
+          <button id="previous-page" type="button" aria-label="Previous page">← Previous</button>
+          <span id="book-page-status" role="status" aria-live="polite">Front cover</span>
+          <button id="next-page" type="button" aria-label="Open book or turn to next page">Open book →</button>
+        </div>
+        <p class="book-help">Turn a page corner to explore · Your selected fields, on every page</p>
       </section>
     </main>
+    <footer class="site-footer"><span>A place for every passage.</span><span>A4 portrait & landscape <i>·</i> Your columns, your order <i>·</i> 30 mm binding margin</span></footer>
+
+    <dialog id="order-dialog" aria-labelledby="order-title">
+      <div class="checkout-header">
+        <div><p class="eyebrow">Your custom logbook</p><h2 id="order-title">Order details</h2></div>
+        <button class="text-button" id="close-order" type="button" aria-label="Close order and return to builder">Close</button>
+      </div>
+      <p class="checkout-progress" id="order-progress">1. Details · 2. Review · 3. Received</p>
+      <div id="order-details">
+        <section class="order-summary" aria-label="Selected configuration" id="configuration-summary"></section>
+        <form id="order-form">
+          <fieldset id="customer-fields">
+            <legend>Your details</legend>
+            <div class="checkout-grid">
+              <label>Full name<input name="name" autocomplete="name" maxlength="100" required /></label>
+              <label>Email address<input name="email" type="email" autocomplete="email" maxlength="254" required /></label>
+              <label class="full-width">Delivery address<textarea name="address" autocomplete="street-address" rows="3" maxlength="500" placeholder="Street, city, region and postal code" required></textarea></label>
+              <label>Country<input name="country" autocomplete="country-name" maxlength="100" required /></label>
+              <label>Quantity<input name="quantity" type="number" min="1" max="100" step="1" value="1" required /></label>
+            </div>
+          </fieldset>
+          <p class="checkout-note">This is an order request. Price, delivery and payment will be agreed before your order is confirmed.</p>
+          <div class="checkout-actions"><button class="primary-button" type="submit">Review order</button></div>
+        </form>
+      </div>
+      <div id="order-review" hidden>
+        <section class="order-summary" id="final-summary" aria-label="Order review"></section>
+        <section class="delivery-summary"><h3>Delivery details</h3><p id="delivery-summary"></p></section>
+        <p class="checkout-note">Check your design and delivery details. Submitting saves your request for review; no payment is taken.</p>
+        <div class="checkout-actions">
+          <button class="secondary-button" id="edit-order" type="button">Edit details</button>
+          <button class="primary-button" id="submit-order" type="button">Submit order request</button>
+        </div>
+      </div>
+      <div id="order-confirmation" hidden>
+        <div class="order-received-mark" aria-hidden="true">✓</div>
+        <h3>Your request is saved</h3>
+        <p>Keep your order reference:</p>
+        <p id="order-reference"></p>
+        <p>Your logbook design and print-ready pages are attached to your order for review. No payment has been taken.</p>
+        <p class="checkout-note">This request is awaiting confirmation. No confirmation email has been sent.</p>
+        <div class="checkout-actions"><button class="primary-button" id="finish-order" type="button">Back to builder</button></div>
+      </div>
+      <p id="order-status" role="status" aria-live="polite"></p>
+    </dialog>
 
   </body>
 </html>
