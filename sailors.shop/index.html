@@ -3,206 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sailor’s Logbook — Make it yours</title>
-    <meta name="description" content="Build your sailing logbook. Choose your format, cover text and binding, then arrange the columns you use at sea." />
-    <script type="module" crossorigin src="./assets/index-tAD9l6Pn.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BXmmIKr_.css">
+    <title>Sailors Gear — Purposeful equipment for life under sail</title>
+    <meta name="description" content="Sailors Gear makes thoughtful equipment for people who keep watch, make passages and care about the details. Start with a logbook built around the way you sail." />
+    <link rel="canonical" href="https://sailorsgear.shop/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sailors Gear" />
+    <meta property="og:title" content="Sailors Gear — Purposeful equipment for life under sail" />
+    <meta property="og:description" content="Thoughtful equipment for the water, beginning with a logbook designed around the way you sail." />
+    <meta property="og:url" content="https://sailorsgear.shop/" />
+    <meta name="theme-color" content="#102e38" />
+    <script type="module" crossorigin src="./assets/home-rlbTlXwY.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="./assets/home-DxpzaoIT.css">
   </head>
   <body>
-    <a class="skip-link" href="#builder">Skip to logbook builder</a>
-    <header class="site-header">
-      <a class="wordmark" href="#">Sailor’s Logbook<span class="wordmark-dot">.</span></a>
-      <a class="header-link" href="#builder">Make it yours <span aria-hidden="true">↗</span></a>
+    <a class="sg-skip" href="#main">Skip to main content</a>
+    <header class="sg-header">
+      <a class="sg-brand" href="/" aria-label="Sailors Gear home"><span>Sailors</span> Gear<i>.</i></a>
+      <nav aria-label="Primary navigation">
+        <a href="/products/logbook">The logbook</a>
+        <a href="#principles">Our approach</a>
+        <a href="#coming-soon">Coming soon</a>
+      </nav>
+      <a class="sg-header-cta" href="/products/logbook">Build yours <span aria-hidden="true">↗</span></a>
     </header>
-    <section class="landing" aria-labelledby="intro-title">
-      <div class="landing-copy">
-        <p class="eyebrow">The next chapter is yours</p>
-        <h1 id="intro-title">Every voyage.<br>Every detail.<br><em>Entirely yours.</em></h1>
-        <p class="landing-description">A logbook should follow the way you sail. Put your name on the cover. Make room for the details that matter. Keep a record of every passage.</p>
-        <a class="landing-cta" href="#builder">Create your logbook <span aria-hidden="true">↗</span></a>
-        <p class="landing-caption">A4 portrait or landscape · Standard paper · Soft or hard cover</p>
-      </div>
-      <div class="landing-stage" aria-label="Portrait and landscape logbook cover previews">
-        <span class="stage-label">A place for every passage</span>
-        <div class="hero-book hero-landscape" aria-label="Landscape cover example">
-          <div class="hero-book-face"><span class="hero-edition">SAILOR’S LOGBOOK</span><span class="hero-cover-title">VOYAGE LOG</span><span class="hero-rule"></span><span class="hero-cover-subtitle">A record of every passage.</span></div>
-        </div>
-        <div class="hero-book hero-portrait" aria-label="Portrait cover example">
-          <div class="hero-book-face"><span class="hero-edition">SAILOR’S LOGBOOK</span><span class="hero-cover-title">VOYAGE LOG</span><span class="hero-rule"></span><span class="hero-cover-subtitle">A record of every passage.</span></div>
-        </div>
-        <span class="stage-footnote">Your cover. Your pages. Your story.</span>
-      </div>
-    </section>
-    <div class="builder-heading"><p class="eyebrow">From the cover to the last column</p><h2>Make it your own.</h2><p>Explore the book as you build it.</p></div>
-    <main class="app-shell" id="builder">
-      <section class="config-panel" aria-label="Logbook configuration">
-        <div class="config-heading"><p class="eyebrow">The logbook atelier</p><h2>Make it yours.</h2></div>
-        <div class="config-tabs" role="tablist" aria-label="Configuration steps">
-          <button id="tab-book" type="button" role="tab" aria-selected="true" aria-controls="book-settings">01 <span>The book</span></button>
-          <button id="tab-pages" type="button" role="tab" aria-selected="false" aria-controls="page-settings" tabindex="-1">02 <span>Your pages</span></button>
-        </div>
-        <p id="configuration-notice" role="status" aria-live="polite"></p>
-        <div id="book-settings" role="tabpanel" aria-labelledby="tab-book">
-        <section class="control-group" aria-labelledby="size-title">
-          <div class="group-heading">
-            <h2 id="size-title">Page Format</h2>
-            <span id="size-readout">A4 portrait</span>
-          </div>
-          <div class="option-grid" id="size-options"></div>
-        </section>
 
-        <p class="paper-included">Standard A4 paper included.</p>
-        <section class="control-group cover-fields" aria-labelledby="cover-text-title">
-          <div class="group-heading"><h2 id="cover-text-title">Your cover text</h2></div>
-          <label for="cover-title">Title <span>48 characters max</span></label>
-          <input id="cover-title" type="text" maxlength="48" placeholder="e.g. VOYAGE LOG" autocomplete="off" />
-          <label for="cover-subtitle">Subtitle or vessel name <span>80 characters max</span></label>
-          <input id="cover-subtitle" type="text" maxlength="80" placeholder="e.g. Saoirse · Our adventures at sea" autocomplete="off" />
-        </section>
-
-        <section class="control-group cover-fields" aria-labelledby="first-page-title">
-          <div class="group-heading"><h2 id="first-page-title">Your first page</h2></div>
-          <label for="first-page-title-input">Heading <span>80 characters max</span></label>
-          <input id="first-page-title-input" type="text" maxlength="80" placeholder="e.g. Vessel details" autocomplete="off" />
-          <label for="first-page-notes">Notes <span>1,000 characters max</span></label>
-          <textarea id="first-page-notes" rows="6" maxlength="1000" placeholder="Add a dedication, vessel details, emergency contacts or anything else you want before the log table."></textarea>
-        </section>
-
-        <section class="control-group" aria-labelledby="binding-title">
-          <div class="group-heading">
-            <h2 id="binding-title">Cover & Binding</h2>
-            <span id="binding-readout">Hard-cover</span>
+    <main id="main">
+      <section class="sg-hero" aria-labelledby="hero-title">
+        <div class="sg-hero-copy">
+          <p class="sg-kicker"><span>01</span> Outfitting thoughtful sailors</p>
+          <h1 id="hero-title">Gear for life<br><em>under sail.</em></h1>
+          <p class="sg-lede">Useful things, made with intention. We begin with the place every passage returns to: your logbook.</p>
+          <div class="sg-actions">
+            <a class="sg-button sg-button-primary" href="/products/logbook">Design your logbook <span aria-hidden="true">→</span></a>
+            <a class="sg-button sg-button-quiet" href="#principles">Why Sailors Gear</a>
           </div>
-          <div class="binding-options" id="binding-options"></div>
-        </section>
-
         </div>
-        <div id="page-settings" role="tabpanel" aria-labelledby="tab-pages" hidden>
-        <p class="settings-note">Select the fields you use at sea. Your choices appear on every page.</p>
-        <section class="control-group" aria-labelledby="header-title">
-          <div class="group-heading">
-            <h2 id="header-title">Page Header</h2>
-            <span id="header-readout">Voyage log</span>
-          </div>
-          <div class="header-options" id="header-options"></div>
-        </section>
-
-        <section class="control-group" aria-labelledby="columns-title">
-          <div class="group-heading">
-            <h2 id="columns-title">Log Columns</h2>
-            <span id="column-count">0 selected</span>
-          </div>
-          <div class="column-grid" id="column-options"></div>
-          <div class="column-order-panel" aria-labelledby="column-order-title">
-            <div class="column-order-heading">
-              <h3 id="column-order-title">Column order</h3>
-            </div>
-            <div class="column-order-list" id="column-order-list"></div>
-          </div>
-          <div class="remarks-layout-panel" aria-labelledby="remarks-layout-title">
-            <div class="column-order-heading">
-              <h3 id="remarks-layout-title">Remarks layout</h3>
-            </div>
-            <div class="remarks-options" id="remarks-options"></div>
-            <div class="remarks-height-group">
-              <span>Remarks height</span>
-              <div class="remarks-height-options" id="remarks-height-options"></div>
-            </div>
-          </div>
-          <div class="remarks-layout-panel" aria-labelledby="footer-sections-title">
-            <div class="column-order-heading">
-              <h3 id="footer-sections-title">Footer sections</h3>
-            </div>
-            <div class="remarks-options" id="footer-options"></div>
-          </div>
-          <form class="custom-column" id="custom-column-form">
-            <label for="custom-column-input">Custom column</label>
-            <div class="input-row">
-              <input id="custom-column-input" type="text" maxlength="20" placeholder="e.g. Reefing notes" />
-              <button type="submit">Add</button>
-            </div>
-          </form>
-        </section>
-        </div>
-        <div class="order-entry">
-          <button class="primary-button" id="review-order" type="button">Review your logbook <span aria-hidden="true">→</span></button>
-          <p>Review your design, then pay securely with Stripe Checkout.</p>
+        <div class="sg-hero-visual">
+          <div class="sg-chart-grid" aria-hidden="true"></div>
+          <div class="sg-coordinate sg-coordinate-top" aria-hidden="true">53° 20′ N · 006° 15′ W</div>
+          <figure class="sg-hero-image">
+            <img src="./assets/a4-portrait-OpxfIcv2.jpg" alt="An open navy logbook resting on a nautical chart beside dividers and rulers" width="1536" height="1024" />
+            <figcaption><strong>Made for your way of keeping watch.</strong><span>A4 · Portrait or landscape · Custom page layout</span></figcaption>
+          </figure>
+          <div class="sg-seal" aria-hidden="true"><span>SG</span><small>EST.<br>2026</small></div>
         </div>
       </section>
 
-      <section class="preview-panel" aria-label="Notebook preview">
-        <div class="preview-toolbar">
-          <div>
-            <p class="eyebrow">Designed by you</p>
-            <h2 id="preview-title">A4 logbook</h2>
-          </div>
-          <div class="preview-meta" id="preview-meta"></div>
-        </div>
+      <section class="sg-manifesto" aria-label="Our promise">
+        <p>Equipment should earn its place aboard.</p>
+        <div><span>Considered</span><i></i><span>Personal</span><i></i><span>Made to be used</span></div>
+      </section>
 
-        <div class="book-tools" aria-label="Preview controls">
-          <div class="book-view-switch"><button id="cover-view" type="button" aria-pressed="true">Cover</button><button id="book-view" type="button" aria-pressed="false">Inside</button><button id="flat-view" type="button" aria-pressed="false">Flat proof</button></div>
-          <button id="book-zoom" type="button" aria-pressed="false">Zoom in</button>
+      <section class="sg-feature" aria-labelledby="logbook-title">
+        <div class="sg-feature-number" aria-hidden="true">01</div>
+        <div class="sg-feature-copy">
+          <p class="sg-kicker">The first piece in the collection</p>
+          <h2 id="logbook-title">Sailor’s Logbook</h2>
+          <p>No two skippers record a passage in quite the same way. Choose the fields you use, arrange them in your order, add your vessel to the cover and inspect every page before checkout.</p>
+          <ul aria-label="Logbook options">
+            <li>A4 portrait or landscape</li>
+            <li>Soft or hard cover</li>
+            <li>Custom headings, columns and first page</li>
+            <li>Live page-turning preview</li>
+          </ul>
+          <a class="sg-text-link" href="/products/logbook">Open the logbook atelier <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="book-viewport" id="book-preview">
-          <div class="book-scene" id="book-scene">
-            <div class="live-book" id="live-book" tabindex="0" aria-label="Logbook preview. Use left and right arrow keys to turn pages.">
-            </div>
+        <div class="sg-feature-art" aria-label="Navy logbook cover preview">
+          <div class="sg-book sg-book-back" aria-hidden="true"></div>
+          <div class="sg-book sg-book-front">
+            <span>SAILOR’S LOGBOOK</span>
+            <strong>VOYAGE<br>LOG</strong>
+            <i></i>
+            <small>A record of every passage.</small>
           </div>
-          <div id="flat-proof" class="flat-proof" hidden aria-label="Flat print layout"></div>
         </div>
-        <div class="book-navigation">
-          <button id="previous-page" type="button" aria-label="Previous page">← Previous</button>
-          <span id="book-page-status" role="status" aria-live="polite">Front cover</span>
-          <button id="next-page" type="button" aria-label="Open book or turn to next page">Open book →</button>
+      </section>
+
+      <section class="sg-principles" id="principles" aria-labelledby="principles-title">
+        <div class="sg-section-heading"><p class="sg-kicker">What guides us</p><h2 id="principles-title">Built around the voyage.</h2></div>
+        <div class="sg-principle-grid">
+          <article><span aria-hidden="true">01</span><h3>Purpose before novelty</h3><p>We start with a real job aboard and remove what does not help. No decorative claims, invented specifications or features looking for a use.</p></article>
+          <article><span aria-hidden="true">02</span><h3>Your habits matter</h3><p>Good gear adapts to the sailor, not the other way round. The logbook begins with your fields, your sequence and your vessel.</p></article>
+          <article><span aria-hidden="true">03</span><h3>Honest by design</h3><p>Clear materials, clear choices and no false urgency. Products appear for sale only when their specifications and fulfilment are ready.</p></article>
         </div>
-        <p class="book-help">Turn a page corner to explore · Your selected fields, on every page</p>
+      </section>
+
+      <section class="sg-coming" id="coming-soon" aria-labelledby="coming-title">
+        <div class="sg-section-heading"><p class="sg-kicker">The outfitting list</p><h2 id="coming-title">More is on the way.</h2><p>We are developing the collection carefully. These categories are directions, not products available to order yet.</p></div>
+        <div class="sg-card-grid">
+          <article class="sg-category sg-category-gloves"><div aria-hidden="true"><span></span></div><p>Coming soon</p><h3>Deck gloves</h3><span>Grip, feel and protection for working lines.</span></article>
+          <article class="sg-category sg-category-jackets"><div aria-hidden="true"><span></span></div><p>Coming soon</p><h3>Weather layers</h3><span>Practical protection for exposed watches.</span></article>
+          <article class="sg-category sg-category-deck"><div aria-hidden="true"><span></span></div><p>Coming soon</p><h3>Deck equipment</h3><span>Useful pieces selected for life aboard.</span></article>
+          <article class="sg-category sg-category-accessories"><div aria-hidden="true"><span></span></div><p>Coming soon</p><h3>Accessories</h3><span>Small essentials that deserve careful thought.</span></article>
+        </div>
+      </section>
+
+      <section class="sg-closing" aria-labelledby="closing-title">
+        <p class="sg-kicker">Begin with the record</p>
+        <h2 id="closing-title">The next passage deserves<br>a page of its own.</h2>
+        <a class="sg-button sg-button-light" href="/products/logbook">Create your logbook <span aria-hidden="true">→</span></a>
       </section>
     </main>
-    <footer class="site-footer"><span>A place for every passage.</span><span>A4 portrait & landscape <i>·</i> Your columns, your order <i>·</i> 30 mm binding margin</span></footer>
 
-    <dialog id="order-dialog" aria-labelledby="order-title">
-      <div class="checkout-header">
-        <div><p class="eyebrow">Your custom logbook</p><h2 id="order-title">Order details</h2></div>
-        <button class="text-button" id="close-order" type="button" aria-label="Close order and return to builder">Close</button>
-      </div>
-      <p class="checkout-progress" id="order-progress">1. Details · 2. Review · 3. Secure checkout</p>
-      <div id="order-details">
-        <section class="order-summary" aria-label="Selected configuration" id="configuration-summary"></section>
-        <form id="order-form">
-          <fieldset id="customer-fields">
-            <legend>Your details</legend>
-            <div class="checkout-grid">
-              <label>Full name<input name="name" autocomplete="name" maxlength="100" required /></label>
-              <label>Email address<input name="email" type="email" autocomplete="email" maxlength="254" required /></label>
-              <label class="full-width">Delivery address<textarea name="address" autocomplete="street-address" rows="3" maxlength="500" placeholder="Street, city, region and postal code" required></textarea></label>
-              <label>Country<input name="country" autocomplete="country-name" maxlength="100" required /></label>
-              <label>Quantity<input name="quantity" type="number" min="1" max="100" step="1" value="1" required /></label>
-            </div>
-          </fieldset>
-          <p class="checkout-note">Your exact price is calculated by the server for the selected format, binding and quantity before Stripe Checkout opens.</p>
-          <div class="checkout-actions"><button class="primary-button" type="submit">Review order</button></div>
-        </form>
-      </div>
-      <div id="order-review" hidden>
-        <section class="order-summary" id="final-summary" aria-label="Order review"></section>
-        <section class="delivery-summary"><h3>Delivery details</h3><p id="delivery-summary"></p></section>
-        <p class="checkout-note">Check your design and delivery details. Continuing creates a pending order and opens Stripe-hosted Checkout. Returning from Stripe never marks an order paid; only a verified webhook can do that.</p>
-        <div class="checkout-actions">
-          <button class="secondary-button" id="edit-order" type="button">Edit details</button>
-          <button class="primary-button" id="submit-order" type="button">Continue to secure checkout</button>
-        </div>
-      </div>
-      <div id="order-confirmation" hidden>
-        <div class="order-received-mark" aria-hidden="true">✓</div>
-        <h3>Your request is saved</h3>
-        <p>Keep your order reference:</p>
-        <p id="order-reference"></p>
-        <p>Your validated design and print artifacts are attached to the pending order. Complete payment only on the Stripe-hosted Checkout page.</p>
-        <p class="checkout-note">Payment confirmation comes from Stripe's verified webhook, never from this browser page.</p>
-        <div class="checkout-actions"><button class="primary-button" id="finish-order" type="button">Back to builder</button></div>
-      </div>
-      <p id="order-status" role="status" aria-live="polite"></p>
-    </dialog>
-
+    <footer class="sg-footer">
+      <a class="sg-brand sg-brand-footer" href="/"><span>Sailors</span> Gear<i>.</i></a>
+      <p>Purposeful equipment for people who go to sea.</p>
+      <nav aria-label="Footer navigation"><a href="/products/logbook">Sailor’s Logbook</a><a href="#principles">Our approach</a><a href="mailto:hello@sailorsgear.shop">Contact</a></nav>
+      <small>© <span id="footer-year">2026</span> Sailors Gear · sailorsgear.shop</small>
+    </footer>
   </body>
 </html>
